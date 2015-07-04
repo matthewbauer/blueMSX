@@ -98,6 +98,7 @@ int archFileDelete(const char* fileName)
 
 #include <sys/stat.h>
 #include <unistd.h>
+#include <stdio.h>
 
 
 int archCreateDirectory(const char* pathname)
@@ -143,4 +144,3 @@ char* archFilenameGetOpenRomZip(Properties* properties, int cartSlot, const char
 char* archFilenameGetOpenDiskZip(Properties* properties, int drive, const char* fname, const char* fileList, int count, int* autostart) { return NULL; }
 char* archFilenameGetOpenCasZip(Properties* properties, const char* fname, const char* fileList, int count, int* autostart) { return NULL; }
 char* archFilenameGetOpenAnyZip(Properties* properties, const char* fname, const char* fileList, int count, int* autostart, int* romType) { return NULL; }
-
